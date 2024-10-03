@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <link href="cart.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    // JavaScript function to update the cart count
+    function updateCart() {
+        // Get the current cart count
+        var currentCount = parseInt(document.getElementById('cartItemCount').innerText);
+
+        // Increment the count by 1
+        var newCount = currentCount + 1;
+
+        // Update the cart count on the page
+        document.getElementById('cartItemCount').innerText = newCount;
+    }
+</script>
+</head>
+
+<body>
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+  <a href="index.html"><img  src="images\logo1.png" height= "300" width = "200"/></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <li class="effect"><a href="food.html">Food</a></li>
+          <li class="effect"><a href="furniture.html">Furniture</a></li>
+          <li class="effect"><a href="shoes.html">Shoes</a></li>
+          <li class="effect"><a href="clothes.html">Clothes</a></li>
+          <li class="effect"><a href="toys.html">Toys</a></li>
+          <li class="effect"><a href="electronics.html">Electronics</a></li>
+          <li class="effect"><a href="bicycles.html">bicycles</a></li>
+          <li class="effect"><a href="books.html">Books</a></li>
+        </ul>
+        <div class="image-container">
+          <!-- The img tag is used to embed an image -->
+          <img src="images/cart.png" height="100"><superscript id="cartItemCount">0</superscript>
+      </div>
+      </div>
+      <div class="right flex items-center">
+        <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+        <div class="profile mx-2 semibold"><h2>ELECTRONICS</h2></div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure  class="effect2">
+	<a href="https://www.walmart.ca/en/ip/sanyo-32-roku-720p-led-hdr-smart-tv-32-in/6000201605686">
+	<img class="itemImg" src="images/electronics/e1.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/sanyo-32-roku-720p-led-hdr-smart-tv-32-in/6000201605686"><figcaption  class="items-center right flex justify-center uppercase semibold">LED TV</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+	<a href="https://www.walmart.ca/en/ip/airpods-3rd-generation-with-magsafe-charging-case-white/6000204156508">
+	<img class="itemImg" src="images/electronics/e2.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/airpods-3rd-generation-with-magsafe-charging-case-white/6000204156508"><figcaption  class="items-center right flex justify-center uppercase semibold">Airpods</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+	<a href="https://www.walmart.ca/en/ip/canon-pixma-ts3425-wireless-inkjet-all-in-one-printer-black-black/6000202676779">
+	<img class="itemImg" src="images/electronics/e3.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/canon-pixma-ts3425-wireless-inkjet-all-in-one-printer-black-black/6000202676779"><figcaption  class="items-center right flex justify-center uppercase semibold">Printer</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+	<a href="https://www.walmart.ca/en/ip/hamilton-beach-07-cu-ft-700w-compact-size-microwave-white-white/6000204288467">
+	<img class="itemImg" src="images/electronics/e4.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/hamilton-beach-07-cu-ft-700w-compact-size-microwave-white-white/6000204288467"><figcaption  class="items-center right flex justify-center uppercase semibold">Microwave</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+   
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure  class="effect2">
+    <a href="https://www.walmart.ca/en/ip/rca-14000-btu-3-in-1-portable-air-conditioner-white/6000205108213">
+	<img class="itemImg" src="images/electronics/e5.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/rca-14000-btu-3-in-1-portable-air-conditioner-white/6000205108213"><figcaption  class="items-center right flex justify-center uppercase semibold">Air Conditioner</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+    <a href="https://www.walmart.ca/en/ip/dualsense-wireless-controller-marvels-spider-man-2-limited-edition-black-red/6000206717925">
+	<img class="itemImg" src="images/electronics/e6.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/dualsense-wireless-controller-marvels-spider-man-2-limited-edition-black-red/6000206717925"><figcaption  class="items-center right flex justify-center uppercase semibold">Gamepad</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+    <a href="https://www.walmart.ca/en/ip/acer-aspire-1-156-notebook-intel-celeron-n4020-a115-31-c0vy-128-gb-emmc-includes-1-year-subscription-microsoft-365-and-1tb-one-drive-charcoal-black/PRD5ODUKXVT2UPS">
+	<img class="itemImg" src="images/electronics/e7.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/acer-aspire-1-156-notebook-intel-celeron-n4020-a115-31-c0vy-128-gb-emmc-includes-1-year-subscription-microsoft-365-and-1tb-one-drive-charcoal-black/PRD5ODUKXVT2UPS"><figcaption  class="items-center right flex justify-center uppercase semibold">Laptop</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure  class="effect2">
+    <a href="https://www.walmart.ca/en/ip/Refurbished-Good-Apple-Watch-Series-8-GPS-45mm-Silver-Aluminum-Case-with-White-Sport-Band-Small-Medium/PRD6UYH9JRPEEDK">
+	<img class="itemImg" src="images/electronics/e8.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/Refurbished-Good-Apple-Watch-Series-8-GPS-45mm-Silver-Aluminum-Case-with-White-Sport-Band-Small-Medium/PRD6UYH9JRPEEDK"><figcaption  class="items-center right flex justify-center uppercase semibold">Watch</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+
+  <footer class="flex">
+ 
+  <div class= "box1" align ="top" >
+  <h3>About Us</h3>
+  <p>All in One, American operator of discount stores that was one 
+  of the world’s biggest retailers and among
+  the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so on.</p>
+  </div>
+  <div class = "box2 items-center">
+  
+    Copyright &copy; allinone.com | All rights reserved<br><br>
+	
+	<marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+  </div>
+  <div class="box3 items-center">
+	<h3>Contact us</h3>
+	<a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+	<h3>Email us</h3>
+	<a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+<script>
+  $(document).ready(function () {
+    $(".effect").hover(function () {
+      $(this).css("background-color", "#2ba8fb");
+    }, function () {
+      $(this).css("background-color", "darkgreen");
+    });
+  });
+  
+  
+  $(document).ready(function(){
+    $(".effect2").hover(function(){
+      $(this).fadeToggle(1500);
+    });
+  });
+  
+  
+  </script>
+</html>

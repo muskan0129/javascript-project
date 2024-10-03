@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <link href="cart.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    // JavaScript function to update the cart count
+    function updateCart() {
+        // Get the current cart count
+        var currentCount = parseInt(document.getElementById('cartItemCount').innerText);
+
+        // Increment the count by 1
+        var newCount = currentCount + 1;
+
+        // Update the cart count on the page
+        document.getElementById('cartItemCount').innerText = newCount;
+    }
+</script>
+</head>
+
+<body>
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+  <a href="index.html"><img  src="images\logo1.png" height= "300" width = "200"/></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <li class="effect"><a href="food.html">Food</a></li>
+          <li class="effect"><a href="furniture.html">Furniture</a></li>
+          <li class="effect"><a href="shoes.html">Shoes</a></li>
+          <li class="effect"><a href="clothes.html">Clothes</a></li>
+          <li class="effect"><a href="toys.html">Toys</a></li>
+          <li class="effect"><a href="electronics.html">Electronics</a></li>
+          <li class="effect"><a href="bicycles.html">bicycles</a></li>
+          <li class="effect"><a href="books.html">Books</a></li>
+        </ul>
+        <div class="image-container">
+          <!-- The img tag is used to embed an image -->
+          <img src="images/cart.png" height="100"><superscript id="cartItemCount">0</superscript>
+      </div>
+      </div>
+      <div class="right flex items-center">
+        <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+        <div class="profile mx-2 semibold"><h2>CLOTHES</h2></div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container section1 flex flex-wrap">
+    <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/george-boys-full-zip-fleece-hoodie-green/6000196508121">
+	<img class="itemImg" src="images/clothes/c1.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/george-boys-full-zip-fleece-hoodie-green/6000196508121"><figcaption  class="items-center right flex justify-center uppercase semibold">Hoodie</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/rustler-mens-carpenter-jean-brown/6000202659782">
+	<img class="itemImg" src="images/clothes/c2.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/rustler-mens-carpenter-jean-brown/6000202659782"><figcaption  class="items-center right flex justify-center uppercase semibold">Jean</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/mario-kart-four-track-boys-short-sleeve-t-shirt-black/6000205813046">
+	<img class="itemImg" src="images/clothes/c3.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/mario-kart-four-track-boys-short-sleeve-t-shirt-black/6000205813046"><figcaption  class="items-center right flex justify-center uppercase semibold">T-Shirt</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/george-mens-jersey-knit-pajama-short-grey/6000202350031">
+	<img class="itemImg" src="images/clothes/c4.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/george-mens-jersey-knit-pajama-short-grey/6000202350031"><figcaption  class="items-center right flex justify-center uppercase semibold">Shorts</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+   
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/george-mens-short-sleeved-crewneck-cotton-tee-navy/6000199264427">
+	<img class="itemImg" src="images/clothes/c5.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/george-mens-short-sleeved-crewneck-cotton-tee-navy/6000199264427"><figcaption  class="items-center right flex justify-center uppercase semibold">Tee</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/fruit-of-the-loom-mens-dual-defense-crew-socks-6-pair-black/6000205854117">
+	<img class="itemImg" src="images/clothes/c6.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/fruit-of-the-loom-mens-dual-defense-crew-socks-6-pair-black/6000205854117"><figcaption  class="items-center right flex justify-center uppercase semibold">Socks</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/hot-foam-winter-gloves-red/6000198972554">
+	<img class="itemImg" src="images/clothes/c7.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/hot-foam-winter-gloves-red/6000198972554"><figcaption  class="items-center right flex justify-center uppercase semibold">Gloves</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/george-mens-baseball-cap-black/6000205648288">
+	<img class="itemImg" src="images/clothes/c8.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/george-mens-baseball-cap-black/6000205648288"><figcaption  class="items-center right flex justify-center uppercase semibold">Cap</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+
+  <footer class="flex">
+ 
+  <div class= "box1" align ="top" >
+  <h3>About Us</h3>
+  <p>All in One, American operator of discount stores that was one 
+  of the world’s biggest retailers and among
+  the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so on.</p>
+  </div>
+  <div class = "box2 items-center">
+  
+    Copyright &copy; allinone.com | All rights reserved<br><br>
+	
+	<marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+  </div>
+  <div class="box3 items-center">
+	<h3>Contact us</h3>
+	<a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+	<h3>Email us</h3>
+	<a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+<script>
+  $(document).ready(function () {
+    $(".effect").hover(function () {
+      $(this).css("background-color", "#2ba8fb");
+    }, function () {
+      $(this).css("background-color", "darkgreen");
+    });
+  });
+  
+  
+  $(document).ready(function(){
+    $(".effect2").hover(function(){
+      $(this).fadeToggle(1500);
+    });
+  });
+  
+  
+  </script>
+</html>

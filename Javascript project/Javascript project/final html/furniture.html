@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <link href="cart.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    // JavaScript function to update the cart count
+    function updateCart() {
+        // Get the current cart count
+        var currentCount = parseInt(document.getElementById('cartItemCount').innerText);
+
+        // Increment the count by 1
+        var newCount = currentCount + 1;
+
+        // Update the cart count on the page
+        document.getElementById('cartItemCount').innerText = newCount;
+    }
+</script>
+
+</head>
+
+<body>
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+  <a href="index.html"><img  src="images\logo1.png" height= "300" width = "200"/></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <li class="effect"><a href="food.html">Food</a></li>
+          <li class="effect"><a href="furniture.html">Furniture</a></li>
+          <li class="effect"><a href="shoes.html">Shoes</a></li>
+          <li class="effect"><a href="clothes.html">Clothes</a></li>
+          <li class="effect"><a href="toys.html">Toys</a></li>
+          <li class="effect"><a href="electronics.html">Electronics</a></li>
+          <li class="effect"><a href="bicycles.html">bicycles</a></li>
+          <li class="effect"><a href="books.html">Books</a></li>
+        </ul>
+        <div class="image-container">
+          <!-- The img tag is used to embed an image -->
+          <img src="images/cart.png" height="100"><superscript id="cartItemCount">0</superscript>
+      </div>
+      </div>
+      <div class="right flex items-center">
+        <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+        <div class="profile mx-2 semibold"><h2>FURNITURE</h2></div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container section1 flex flex-wrap">
+  <div>
+  <figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/mainstays-5-shelf-bookcase-with-adjustable-shelves-multiple-colors-birch/6000205188609">
+	<img class="itemImg" src="images/furniture/f1.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/mainstays-5-shelf-bookcase-with-adjustable-shelves-multiple-colors-birch/6000205188609"><figcaption  class="items-center right flex justify-center uppercase semibold">5-Shelf Bookcase</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/miles-metal-fullfull-bunk-bed-silver/6000200381708">
+	<img class="itemImg" src="images/furniture/f2.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/miles-metal-fullfull-bunk-bed-silver/6000200381708"><figcaption  class="items-center right flex justify-center uppercase semibold">Full Bunk Bed</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/gsc-4-centerfolding-table-white-white/6000088932054">
+	<img class="itemImg" src="images/furniture/f3.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/gsc-4-centerfolding-table-white-white/6000088932054"><figcaption  class="items-center right flex justify-center uppercase semibold">Centerfolding Table</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/mainstays-bonded-leather-mid-back-managers-office-chair-black/6000199102325">
+	<img class="itemImg" src="images/furniture/f4.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/mainstays-bonded-leather-mid-back-managers-office-chair-black/6000199102325"><figcaption  class="items-center right flex justify-center uppercase semibold">Leather Mid-Back Office Chair</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+   
+  
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/mainstays-6-cube-organizer-multiple-colors-rustic-brown/6000197030454">
+	<img class="itemImg" src="images/furniture/f5.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/mainstays-6-cube-organizer-multiple-colors-rustic-brown/6000197030454"><figcaption  class="items-center right flex justify-center uppercase semibold">Mainstays 6-Cube Organizer</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/end-table-white-white/6000202566874">
+	<img class="itemImg" src="images/furniture/f6.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/end-table-white-white/6000202566874"><figcaption  class="items-center right flex justify-center uppercase semibold">END TABLE-WHITE</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/single-tv-tray-table-natural-natural/6000044050556">
+	<img class="itemImg" src="images/furniture/f7.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/single-tv-tray-table-natural-natural/6000044050556"><figcaption  class="items-center right flex justify-center uppercase semibold">Single TV Tray Table</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/dream-on-me-marcus-changing-table-and-dresser-storm-grey/PRD33XVV2L4FY88">
+	<img class="itemImg" src="images/furniture/f8.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/dream-on-me-marcus-changing-table-and-dresser-storm-grey/PRD33XVV2L4FY88"><figcaption  class="items-center right flex justify-center uppercase semibold">Marcus Table and Dresser</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+
+  <footer class="flex">
+ 
+  <div class= "box1" align ="top" >
+  <h3>About Us</h3>
+  <p>All in One, American operator of discount stores that was one 
+  of the world’s biggest retailers and among
+  the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so on.</p>
+  </div>
+  <div class = "box2 items-center">
+  
+    Copyright &copy; allinone.com | All rights reserved<br><br>
+	
+	<marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+  </div>
+  <div class="box3 items-center">
+	<h3>Contact us</h3>
+	<a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+	<h3>Email us</h3>
+	<a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+<script>
+  $(document).ready(function () {
+    $(".effect").hover(function () {
+      $(this).css("background-color", "#2ba8fb");
+    }, function () {
+      $(this).css("background-color", "darkgreen");
+    });
+  });
+  
+  
+  $(document).ready(function(){
+    $(".effect2").hover(function(){
+      $(this).fadeToggle(1500);
+    });
+  });
+  
+  
+  </script>
+</html>

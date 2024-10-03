@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+   <style>
+    h1 {
+      color: red;
+      margin-top: 40px;
+    }
+
+    .asterisk {
+      color: red;
+    }
+
+    #register {
+        display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #f47421;
+    color: #f47421;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    margin-left: 111px
+
+    }
+
+    #register:hover {
+    background-color: #f47421;
+    color: #fff;
+    border-color: #fff;
+  }
+  </style> 
+
+</head>
+
+<body>
+
+    <script>
+        function validateInputs() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+          
+            
+            if (firstname == "") {
+                alert("Please enter First Name!!");
+                document.getElementById("firstname").focus();
+                return false;
+            }
+            if (lastname == "") {
+                alert("Please enter Last Name!!");
+                document.getElementById("lastname").focus();
+                return false;
+            }
+            if (dob == "") {
+                alert("Please enter Date of Birth!!");
+                document.getElementById("dob").focus();
+                return false;
+            }
+            if (email == "") {
+                alert("Please enter your E-mail!!");
+                document.getElementById("email").focus();
+                return false;
+            }
+    
+            if (password == "") {
+                alert("Please enter Password!!");
+                document.getElementById("password").focus();
+                return false;
+            }
+            if (confirmPassword == "") {
+                alert("Please enter Re_Enter Password!!");
+                document.getElementById("confirmPassword").focus();
+                return false;
+            }
+            
+            
+            if (password != "" && confirmPassword != "" && password != confirmPassword) {
+                alert("Please enter same password!!");
+                document.getElementById("confirmPassword").focus();
+                document.getElementById("confirmPassword").select();
+                return false;
+            }
+            alert("Input data validated successfully..!!");
+            redirect();
+            return true;
+        }
+
+
+        function redirect(){
+        window.location.href = "index.html";}
+    </script>
+
+    <!-- //=========================================================== -->
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+        <a href="index.html"><img src="images\logo1.png" height="300" width="200" /></a>
+        <div class="right flex items-center">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section1" class="container section1 flex flex-wrap items-center justify-center">
+    <h1>Registration Page</h1>
+  </section>
+
+  <section id="section2" class="container section1 flex flex-wrap items-center justify-center">
+	<form onsubmit="return validateInputs()" action="index.html">
+		<table align = "center">
+			<tr>
+				<td><b>First Name<sup class="asterisk">*</sup>:</b></td>
+				<td><input type="text" id="firstname"/></td>
+				
+			</tr>
+			<tr>
+				<td><b>Last Name<sup class="asterisk">*</sup>:</b></td>
+				<td><input type="text" id="lastname"/></td>
+				
+			</tr>
+			<tr>
+				<td><b>Date of birth<sup class="asterisk">*</sup></b></td>
+				<td><input type="date" id="dob"/></td>
+				
+			</tr>
+
+            <tr>
+				<td><b>E-mail<sup class="asterisk">*</sup>:</b></td>
+				<td><input type="text" id="email"/></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Password<sup class="asterisk">*</sup>:</b></td>
+				<td><input type="password"  id="password"/></td>
+				
+			</tr>
+			<tr>
+				<td><b>Re_Enter Password<sup class="asterisk">*</sup>:</b></td>
+				<td><input type="password"  id="confirmPassword"/></td>
+				
+			</tr>
+		
+		</table>
+		<br/>
+		
+		<input type="submit"  id="register" value="Register"/>
+		
+	</form>
+  </section>
+
+  <footer class="flex">
+
+    <div class="box1" align="top">
+      <h3>About Us</h3>
+      <p>All in One, American operator of discount stores that was one
+        of the world’s biggest retailers and among
+        the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so
+        on.</p>
+    </div>
+    <div class="box2 items-center">
+
+      Copyright &copy; allinone.com | All rights reserved<br><br>
+
+      <marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+    </div>
+    <div class="box3 items-center">
+      <h3>Contact us</h3>
+      <a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+      <h3>Email us</h3>
+      <a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

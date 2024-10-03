@@ -1,0 +1,169 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Consolas;
+}
+
+header{
+  background:darkgreen;
+  height: 84px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rightBox{
+    display: flex;
+    margin: 12px;
+  }
+
+.left img{
+  width: 80px;
+  height: 70px;
+}
+
+.container{ 
+  padding: 20px -1vw;
+  padding-top: 15px;
+  padding-bottom: 20px; 
+}
+
+.containerHeader{ 
+  padding: 0 10vw; 
+}
+
+nav{
+  font-size: 14px;
+  padding-top: 18px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 45px;
+  border: 0;
+  border-radius: 100px;
+  padding: 12.5px 30px;
+}
+
+.section1{
+  background: white;
+}
+
+.search{
+  width: 65vw;
+    padding: 7px 15px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+	border: 10px solid white;
+}
+
+
+.itemImg{
+  width: 11vw;
+  height: 11vw;
+  margin: 34px 57px;
+  border-radius: 21%;
+  
+}
+
+footer{
+  padding: 23px;
+  text-align: center;
+  background: darkgreen;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  
+}
+
+.tall{
+  min-height: 40vh;
+}
+
+@media (max-width: 450px) { 
+.search {
+    width: 72vw; 
+}
+}
+
+@media (max-width: 1550px) { 
+
+  nav ul li {
+    list-style: none;
+    padding: 2 10px;
+    font-size: 14px;
+}
+  
+
+  .containerHeader {
+    padding: 0 10vw;
+}
+  
+header{ 
+height:145px;
+}  
+
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right{ 
+    flex-direction: column;
+  }
+
+  .rightBox{
+    display: flex;
+    margin: 12px;
+  }
+}
+
+.box1{
+	width: 23.33%;
+	float: left;
+	color: white;
+	
+}
+
+.box2{
+	width: 33.33%;
+	margin: auto;
+	color: white;
+	padding-top:10px;
+}
+
+.box3{
+	width: 23.33%;
+	float: right;
+	color: white;
+}
+
+figcaption{
+	text-decoration: none;
+	color: red;
+}
+
+a{
+	text-decoration: none;
+	color: yellow;
+}
+
+.image-container{
+  padding-left: 60px;
+  padding-right: 350px;
+  margin-top: -88px;
+  margin-bottom: -153px;
+  margin-left: 13px;
+  margin-right: -496px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+superscript{ top: 5px; /* Adjust the top position as needed */
+  right: 5px; /* Adjust the right position as needed */
+  font-size: 18px; /* Adjust the font size as needed */
+  color: black; /* Adjust the text color as needed */
+  background-color: yellow; /* Adjust the background color and opacity as needed */
+  padding: 5px; /* Adjust the padding as needed */
+  border-radius: 50px; /* Optional: Add rounded corners */
+}

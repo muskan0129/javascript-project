@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="cart.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    // JavaScript function to update the cart count
+    function updateCart() {
+        // Get the current cart count
+        var currentCount = parseInt(document.getElementById('cartItemCount').innerText);
+
+        // Increment the count by 1
+        var newCount = currentCount + 1;
+
+        // Update the cart count on the page
+        document.getElementById('cartItemCount').innerText = newCount;
+    }
+</script>
+</head>
+
+<body>
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+  <a href="index.html"><img  src="images\logo1.png" height= "300" width = "200"/></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <li class="effect"><a href="food.html">Food</a></li>
+          <li class="effect"><a href="furniture.html">Furniture</a></li>
+          <li class="effect"><a href="shoes.html">Shoes</a></li>
+          <li class="effect"><a href="clothes.html">Clothes</a></li>
+          <li class="effect"><a href="toys.html">Toys</a></li>
+          <li class="effect"><a href="electronics.html">Electronics</a></li>
+          <li class="effect"><a href="bicycles.html">bicycles</a></li>
+          <li class="effect"><a href="books.html">Books</a></li>
+        </ul>
+        <div class="image-container">
+          <!-- The img tag is used to embed an image -->
+          <img src="images/cart.png" height="100"><superscript id="cartItemCount">0</superscript>
+      </div>
+      </div>
+      <div class="right flex items-center">
+        <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+        <div class="profile mx-2 semibold"><h2>FOOD</h2></div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/great-value-original-wieners/6000202618654">
+	<img class="itemImg" src="images/foods/f1.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/great-value-original-wieners/6000202618654"><figcaption  class="items-center right flex justify-center uppercase semibold">Original Wieners</figcaption></a>
+  </figure>
+	<button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/strawberries/871283">
+	<img class="itemImg" src="images/foods/f2.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/strawberries/871283"><figcaption  class="items-center right flex justify-center uppercase semibold">Strawberries</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/your-fresh-market-clementine/6000199359368">
+	<img class="itemImg" src="images/foods/f3.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/your-fresh-market-clementine/6000199359368"><figcaption  class="items-center right flex justify-center uppercase semibold">Clementine</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/your-fresh-market-tomato-grape/6000194960083">
+	<img class="itemImg" src="images/foods/f4.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/your-fresh-market-tomato-grape/6000194960083"><figcaption  class="items-center right flex justify-center uppercase semibold">Tomato</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+   
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/pineapple-golden-jumbo/6000191289579">
+	<img class="itemImg" src="images/foods/f5.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/pineapple-golden-jumbo/6000191289579"><figcaption  class="items-center right flex justify-center uppercase semibold">Pineapple</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/carrot-your-fresh-market/6000197111434">
+	<img class="itemImg" src="images/foods/f6.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/carrot-your-fresh-market/6000197111434"><figcaption  class="items-center right flex justify-center uppercase semibold">Carrot</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/great-value-enriched-white-bread/6000191270624">
+	<img class="itemImg" src="images/foods/f7.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/great-value-enriched-white-bread/6000191270624"><figcaption  class="items-center right flex justify-center uppercase semibold">White Bread</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/great-value-salted-butter/6000200237827">
+	<img class="itemImg" src="images/foods/f8.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/great-value-salted-butter/6000200237827"><figcaption  class="items-center right flex justify-center uppercase semibold">Salted Butter</figcaption></a>
+  </figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+
+  <footer class="flex">
+ 
+  <div class= "box1" align ="top" >
+  <h3>About Us</h3>
+  <p>All in One, American operator of discount stores that was one 
+  of the world’s biggest retailers and among
+  the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so on.</p>
+  </div>
+  <div class = "box2 items-center">
+  
+    Copyright &copy; allinone.com | All rights reserved<br><br>
+	
+	<marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+  </div>
+  <div class="box3 items-center">
+	<h3>Contact us</h3>
+	<a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+	<h3>Email us</h3>
+	<a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+<script>
+  $(document).ready(function () {
+    $(".effect").hover(function () {
+      $(this).css("background-color", "#2ba8fb");
+    }, function () {
+      $(this).css("background-color", "darkgreen");
+    });
+  });
+  
+  
+  $(document).ready(function(){
+    $(".effect2").hover(function(){
+      $(this).fadeToggle(1500);
+    });
+  });
+  
+  
+  </script>
+
+</html>

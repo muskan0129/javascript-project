@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images\logo1.png">
+  <title>All in One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <link href="cart.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    // JavaScript function to update the cart count
+    function updateCart() {
+        // Get the current cart count
+        var currentCount = parseInt(document.getElementById('cartItemCount').innerText);
+
+        // Increment the count by 1
+        var newCount = currentCount + 1;
+
+        // Update the cart count on the page
+        document.getElementById('cartItemCount').innerText = newCount;
+    }
+</script>
+</head>
+
+<body>
+  <header class="containerHeader">
+    <nav class="flex space-between">
+      <div class="left flex items-center">
+  <a href="index.html"><img  src="images\logo1.png" height= "300" width = "200"/></a>
+        <ul class="flex items-center justify-center uppercase semibold">
+          <li class="effect"><a href="food.html">Food</a></li>
+          <li class="effect"><a href="furniture.html">Furniture</a></li>
+          <li class="effect"><a href="shoes.html">Shoes</a></li>
+          <li class="effect"><a href="clothes.html">Clothes</a></li>
+          <li class="effect"><a href="toys.html">Toys</a></li>
+          <li class="effect"><a href="electronics.html">Electronics</a></li>
+          <li class="effect"><a href="bicycles.html">bicycles</a></li>
+          <li class="effect"><a href="books.html">Books</a></li>
+        </ul>
+        <div class="image-container">
+          <!-- The img tag is used to embed an image -->
+          <img src="images/cart.png" height="100"><superscript id="cartItemCount">0</superscript>
+      </div>
+      </div>
+      <div class="right flex items-center">
+        <input class="search" placeholder="Search for products, brands and more" class="desktop-searchBar" value="" data-reactid="904">
+        <div class="rightBox">
+        <div class="profile mx-2 semibold"><h2>BICYCLES</h2></div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/26-hyper-easy-rider-steel-teal/6000202198591">
+	<img class="itemImg" src="images/bicycles/c1.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/26-hyper-easy-rider-steel-teal/6000202198591"><figcaption  class="items-center right flex justify-center uppercase semibold">Hyper Rider Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/electric-commuter-bicycle-26-in-350w-with-removable-36-v78ah-battery-unisex-ebike-blue-by-stoneridge-cycle/6000206398791">
+	<img class="itemImg" src="images/bicycles/c2.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/electric-commuter-bicycle-26-in-350w-with-removable-36-v78ah-battery-unisex-ebike-blue-by-stoneridge-cycle/6000206398791"><figcaption  class="items-center right flex justify-center uppercase semibold">350W Commuter Bicycle</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/electric-mountain-bicycle-26-in-350w-with-removable-36-v78ah-battery-unisex-ebike-black-by-stoneridge-cycle/6000206399606">
+	<img class="itemImg" src="images/bicycles/c3.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/electric-mountain-bicycle-26-in-350w-with-removable-36-v78ah-battery-unisex-ebike-black-by-stoneridge-cycle/6000206399606"><figcaption  class="items-center right flex justify-center uppercase semibold">26'' Electric Bicycle</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+	<a href="https://www.walmart.ca/en/ip/275-hyper-bear-mountain-bike-aluminum-blue/6000202193205">
+	<img class="itemImg" src="images/bicycles/c4.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/275-hyper-bear-mountain-bike-aluminum-blue/6000202193205"><figcaption  class="items-center right flex justify-center uppercase semibold">27.5" Hyper Bear Mountain Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+   
+  <section class="container section1 flex flex-wrap">
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/20-hyper-bear-mountain-bike-pink-pink/6000205326091">
+	<img class="itemImg" src="images/bicycles/c5.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/20-hyper-bear-mountain-bike-pink-pink/6000205326091"><figcaption  class="items-center right flex justify-center uppercase semibold">20" Hyper Bear Mountain Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/hyper-36v-electric-20-inch-radster-unisex-aluminum-bike-silver-silver/6000200869821">
+	<img class="itemImg" src="images/bicycles/c6.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/hyper-36v-electric-20-inch-radster-unisex-aluminum-bike-silver-silver/6000200869821"><figcaption  class="items-center right flex justify-center uppercase semibold">Hyper 36v Electric Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/marvel-spidey-and-his-amazing-friends-12-inch-boys-bike-blue-by-huffy-blue/6000205141008">
+	<img class="itemImg" src="images/bicycles/c7.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/marvel-spidey-and-his-amazing-friends-12-inch-boys-bike-blue-by-huffy-blue/6000205141008"><figcaption  class="items-center right flex justify-center uppercase semibold">Spidey Boys’ Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+	
+  <div>
+	<figure class="effect2">
+    <a href="https://www.walmart.ca/en/ip/marvel-black-panther-18-inch-bmx-bike-for-boys-black-by-huffy-black/6000205148253">
+	<img class="itemImg" src="images/bicycles/c8.jpg"/></a>
+	<a href="https://www.walmart.ca/en/ip/marvel-black-panther-18-inch-bmx-bike-for-boys-black-by-huffy-black/6000205148253"><figcaption  class="items-center right flex justify-center uppercase semibold">Black Panther BMX Bike</figcaption></a>
+	</figure>
+  <button class="add-to-cart-btn" onclick="updateCart()">Add to Cart</button>
+  </div>
+  </section>
+
+  <footer class="flex">
+ 
+  <div class= "box1" align ="top" >
+  <h3>About Us</h3>
+  <p>All in One, American operator of discount stores that was one 
+  of the world’s biggest retailers and among
+  the world’s largest corporations.We sell goods like Clothes, Shoes, Books, Furniture, Toys, Electronics and so on.</p>
+  </div>
+  <div class = "box2 items-center">
+  
+    Copyright &copy; allinone.com | All rights reserved<br><br>
+	
+	<marquee><a href="https://www.walmart.ca/en">Credits to walwart.ca</a></marquee>
+  </div>
+  <div class="box3 items-center">
+	<h3>Contact us</h3>
+	<a href="tel:+1 (647) XXX-XXX">Telphone: +1 (647) XXX-XXX</a><br>
+	<h3>Email us</h3>
+	<a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+<script>
+  $(document).ready(function () {
+    $(".effect").hover(function () {
+      $(this).css("background-color", "#2ba8fb");
+    }, function () {
+      $(this).css("background-color", "darkgreen");
+    });
+  });
+  
+  
+  $(document).ready(function(){
+    $(".effect2").hover(function(){
+      $(this).fadeToggle(1500);
+    });
+  });
+  
+  
+  </script>
+
+</html>
